@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         self.window?.rootViewController = navigationVC
         
-        let appCoodinator = AppCoodinator()
+        let appCoodinator = AppCoodinator(navigationController: navigationVC)
         
         // Initial presenting
         appCoodinator.start()
